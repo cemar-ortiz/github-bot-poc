@@ -22,6 +22,12 @@ jobs:
         with:
           node-version: 20
 
+      - name: Configure git identity
+        run: |
+            git config user.name "cemar-bot"
+            git config user.email "252385437+cemar-bot@users.noreply.github.com"
+
+
       - name: Install deps
         run: npm install @actions/core @actions/github
 
